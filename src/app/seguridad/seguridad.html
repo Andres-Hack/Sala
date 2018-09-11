@@ -1,0 +1,65 @@
+<div id="wrapper">
+    <div>
+      <acme-navbar creation-date="main.creationDate"></acme-navbar>
+    </div>
+    <div id="page-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Pagina Principal</h1>
+                </div>
+                <strong>{{seg.mensaje}}</strong>
+                <button type="button" class="btn btn-{{seg.classAnimation}}" ng-click="seg.showToastr()" >Mensaje</button>
+                <button type="button" class="btn btn-warning" ng-click="seg.showCambio()" >Cambio</button>
+                <button type="button" class="btn btn-success" >Enviar</button>
+                <br /><br />
+                <div class="row">
+                  <div class="col-lg-4 col-md-12">
+                    <div class="form-group">
+                      <label>Checkboxes</label>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value="option1" ng-model="seg.mostrar.foco1" ng-click="seg.guardarEstado()"> Foco 1
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value="option2" ng-model="seg.mostrar.foco2" ng-click="seg.guardarEstado()"> Foco 2
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value="option3" ng-model="seg.mostrar.foco3" ng-click="seg.guardarEstado()"> Foco 3
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value="option1" ng-model="seg.mostrar.foco4" ng-click="seg.guardarEstado()"> Foco 4
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value="option2" ng-model="seg.mostrar.ventilador" ng-click="seg.guardarEstado()"> Ventilador
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value="option3" ng-model="seg.mostrar.puerta" ng-click="seg.guardarEstado()" > Puerta
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-8 col-md-12">
+                    <p class="lead">
+                      <img src="assets/images/sala1.jpg" class="img-responsive"><br>
+                    </p>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./assets/vendor/jquery/jquery.min.js"></script>
+<script src="./assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="./assets/vendor/metisMenu/metisMenu.min.js"></script>
+<script src="./assets/dist/js/sb-admin-2.js"></script>

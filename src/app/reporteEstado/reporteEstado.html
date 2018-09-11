@@ -1,0 +1,33 @@
+<div id="wrapper">
+    <div>
+      <acme-navbar creation-date="main.creationDate"></acme-navbar>
+    </div>
+    <div id="page-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Reporte por estado y actividad</h1>
+                </div>
+                <div class="row">
+                  <div class="col-lg-4">
+                    <form role="form">
+                      <label class="control-label">Ingrese la fecha de reporte :</label>
+                      <div class="form-group input-group has-success">
+                        <span class="input-group-addon"><i class="fa fa-calendar"></i>
+                        </span>
+                        <input type="date" required class="form-control" id="inputSuccess" ng-model="fechaE">
+                      </div>
+                      <a href="http://192.168.10.10:5488/templates/Sk0UBhrMm?fecha={{ fechaE | date:'yyyy-MM-dd' }}" target="_blank">
+                        <button type="button" class="btn btn-primary">Aceptar</button>
+                      </a>
+                    </form>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./assets/vendor/jquery/jquery.min.js"></script>
+<script src="./assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="./assets/vendor/metisMenu/metisMenu.min.js"></script>
+<script src="./assets/dist/js/sb-admin-2.js"></script>
